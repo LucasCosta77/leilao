@@ -2,16 +2,16 @@ node {
     try{
         stage ('Compile Stage') {
 
-            mvn {
-                    command =  'clean compile'
-            }
+
+                    sh  'mvn clean compile'
+
         }
 
         stage ('Testing Stage') {
 
-            mvn {
-                    command = 'mvn teste'
-            }
+
+                    sh 'mvn teste'
+
         }
     }catch(e){
         stage ('Failure Notification') {

@@ -10,7 +10,7 @@ node {
         stage ('Testing Stage') {
 
 
-                    sh 'mvn test'
+                    sh 'mvn teste'
 
         }
     }catch(err){
